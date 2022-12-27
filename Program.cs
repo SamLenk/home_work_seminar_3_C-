@@ -6,11 +6,11 @@ int num = Convert.ToInt32(System.Console.ReadLine());
 string num3 = Convert.ToString(num);
 if (num3[0] == num3[4] && num3[1] == num3[3])
 {
-        System.Console.Write($"Число {num3} - Полиндром!");
+    System.Console.Write($"Число {num3} - Полиндром!");
 }
 else
 {
-        System.Console.Write($"Число {num3} - Не полиндром");
+    System.Console.Write($"Число {num3} - Не полиндром");
 }
 
 // Задача 2
@@ -29,5 +29,16 @@ int y2 = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите координату Z точки B: ");
 int z2 = Convert.ToInt32(Console.ReadLine());
 
-double result = Math.Round(Math.Sqrt(Math.Pow((x1 - x2),2) + Math.Pow((y1 - y2),2) + Math.Pow((z1 - z2),2)),2); 
+double result = Math.Round(Math.Sqrt(Math.Pow((x1 - x2), 2) + Math.Pow((y1 - y2), 2) + Math.Pow((z1 - z2), 2)), 2);
 System.Console.WriteLine($"Расстояние между тремя точками: {result}");
+
+// Задача 3
+
+System.Console.WriteLine("Введите число");
+int x = int.Parse(Console.ReadLine()!);
+
+for (int i = 1; i <= x; i++)
+{
+
+    Console.Write(Math.Pow(i, 3) +" ");
+}
